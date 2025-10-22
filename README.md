@@ -51,7 +51,7 @@ This project does **not** implement actual encryption or backend security at a h
 
 ## 👨‍💻 Author
 
-Created by **coded-by-ozdemir94941**  
+Created by **ozdemir94941**  
 📘 MIT Licensed – see `LICENSE` for full terms
 
 ---
