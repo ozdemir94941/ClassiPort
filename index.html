@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Secure Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="login-section" class="visible">
+      <h1>Secure Vault</h1>
+      <p>Enter your master password to unlock your vault.</p>
+      <input type="password" id="master-password" placeholder="Master Password" autocomplete="new-password" />
+      <button id="unlock-btn">Unlock Vault</button>
+      <div id="login-error" class="error"></div>
+    </section>
+
+    <section id="vault-section" class="hidden">
+      <header>
+        <h1>Your Vault</h1>
+        <button id="logout-btn" title="Lock Vault">🔒 Lock</button>
+      </header>
+
+      <section id="add-entry">
+        <input type="text" id="entry-title" placeholder="Entry Title" />
+        <textarea id="entry-content" placeholder="Entry Content"></textarea>
+        <button id="add-entry-btn">Add Entry</button>
+        <div id="entry-error" class="error"></div>
+      </section>
+
+      <section id="entries-list">
+        <!-- Vault entries dynamically added here -->
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
